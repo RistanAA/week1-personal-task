@@ -10,6 +10,6 @@ const port = 3000;
 app.use(express.json());
 app.use('/api', [postRouter]);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000 , () => {
     console.log(port, 'Server is open with port!');
 });
