@@ -113,7 +113,6 @@ router.get('/comments/:postId', async (req, res) => {
         return res.json({
             postTitle: post.title,
             comments: comments
-            // comments: comments.map(item =>item._id + " - " + item.user + " - " + item.comments)
         })
     }
     return res.status(400).json({
